@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "minimal-newtab",
+  "description": "a minimal, private and lightweight new tab page without any bloat.",
+  "author": "mateusx02",
+  "version": "1.0",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}

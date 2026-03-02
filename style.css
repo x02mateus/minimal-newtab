@@ -1,0 +1,120 @@
+:root {
+  --text-color: #fff;
+  --bg-color: #000;
+  --accent-color: #444;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+/* Barra */
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 520px;
+  border-bottom: 1px solid var(--accent-color);
+  padding: 10px 4px;
+}
+
+/* Ícone */
+#engineIcon {
+  width: 18px;
+  height: 18px;
+  margin-right: 12px;
+  cursor: pointer;
+  flex-shrink: 0;
+  opacity: 0.8;
+  transition: opacity 0.15s ease;
+  filter: invert(1);
+}
+
+#engineIcon:hover {
+  opacity: 1;
+}
+
+/* Input */
+#searchInput {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: inherit;
+  font-size: clamp(16px, 3vw, 20px);
+}
+
+/* Config */
+#settingsBtn {
+  cursor: pointer;
+  opacity: 0.6;
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 18px;
+}
+
+#settingsBtn:hover {
+  opacity: 1;
+}
+
+#settingsPanel {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  background: #111;
+  padding: 16px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  width: min(90vw, 260px);
+}
+
+.hidden {
+  display: none;
+}
+
+label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+/* Ações fixas (GitHub + Config) */
+.fixed-actions {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+/* Botão GitHub */
+#githubBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  opacity: 0.6;
+  transition: opacity 0.15s ease;
+  text-decoration: none;
+}
+
+#githubBtn:hover {
+  opacity: 1;
+}
