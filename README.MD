@@ -1,6 +1,7 @@
 # minimal newtab
 
 a minimal, private and lightweight new tab page without any bloat.
+![Preview](https://i.imgur.com/6CxtvoU.png)
 
 ## features
 
